@@ -5,10 +5,10 @@ public abstract class Justiciero {
 	protected String nombre;
 	protected int edad;
 	protected int anyosExperiencia;
-	protected String punteria;
+	protected int punteria;
 	protected int numMedallasHonor;
 	
-	protected Justiciero(String nombre, int edad, int anyosExperiencia, String punteria, int numMedallasHonor) {
+	protected Justiciero(String nombre, int edad, int anyosExperiencia, int punteria, int numMedallasHonor) {
 		super();
 		this.nombre = nombre;
 		this.edad = edad;
@@ -41,11 +41,11 @@ public abstract class Justiciero {
 		this.anyosExperiencia = anyosExperiencia;
 	}
 
-	public String getPunteria() {
+	public int getPunteria() {
 		return punteria;
 	}
 
-	public void setPunteria(String punteria) {
+	public void setPunteria(int punteria) {
 		this.punteria = punteria;
 	}
 
