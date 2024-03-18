@@ -2,24 +2,24 @@ package marineros;
 
 public class Capitan extends Pirata {
 
-	private int pueblosAsaltos;
+	private int pueblosAsaltados;
 	private int islasDescubiertas;
 	private int doblonesRobados;
 	
 	public Capitan(String nombre, int edad, String arma, String sombrero, String mascota, int pueblosAsaltos,
 			int islasDescubiertas, int doblonesRobados) {
 		super(nombre, edad, arma, sombrero, mascota);
-		this.pueblosAsaltos = pueblosAsaltos;
+		this.pueblosAsaltados = pueblosAsaltos;
 		this.islasDescubiertas = islasDescubiertas;
 		this.doblonesRobados = doblonesRobados;
 	}
 
 	public int getPueblosAsaltos() {
-		return pueblosAsaltos;
+		return pueblosAsaltados;
 	}
 
 	public void setPueblosAsaltos(int pueblosAsaltos) {
-		this.pueblosAsaltos = pueblosAsaltos;
+		this.pueblosAsaltados = pueblosAsaltos;
 	}
 
 	public int getIslasDescubiertas() {
@@ -38,6 +38,25 @@ public class Capitan extends Pirata {
 		this.doblonesRobados = doblonesRobados;
 	}
 	
+	public boolean mandarAFregar(Subordinado mandao) {
+		System.out.println("¡Tú, " + mandao.getApodo() + ", a fregar!");
+		return mandao.fregarCubierta();
+	}
 	
+	public void descubrirIsla (String isla) {
+		System.out.println("¡Hemos hallado nuevas tierras! La isla se llamará " + isla);
+	}
+	
+	public void asaltarPueblo (String pueblo, int doblones) {
+		System.out.println("¡Arramblad con todo! ¡Nos quedamos con el oro de " + pueblo + "!");
+		this.doblonesRobados += doblones;
+		this.pueblosAsaltados++;
+	}
+
+	@Override
+	void rugidoPirata() {
+		System.out.println("¡ARRRR! ¡Temerán nuestra bandera!");
+		
+	}
 
 }

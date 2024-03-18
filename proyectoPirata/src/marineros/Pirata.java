@@ -57,7 +57,7 @@ public abstract class Pirata {
 		this.mascota = mascota;
 	}
 	
-	
+	abstract void rugidoPirata();
 	
 	
 	
