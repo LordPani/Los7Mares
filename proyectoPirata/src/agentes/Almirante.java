@@ -4,6 +4,11 @@ import marineros.Capitan;
 import marineros.Pirata;
 import marineros.Subordinado;
 
+/**
+ * Esta clase es la de los jefes de la Marina, los almirantes.
+ * @author Sergio
+ */
+
 public class Almirante extends Justiciero {
 	
 	private int numPiratasCapturados;
@@ -34,18 +39,35 @@ public class Almirante extends Justiciero {
 		this.barcoQueDirige = barcoQueDirige;
 	}
 	
-	public void capturarPirata (Pirata preso) {
+	/**
+	 * Método que sirve para que el almirante capture un pirata. Dependiendo de qué tipo capture, recibirá o no una medalla de honor.
+	 * @param preso Es el pirata que ha capturado.
+	 * @return Devuelve el éxito de la captura, que en este caso siempre es true.
+	 */
+	
+	public boolean capturarPirata (Pirata preso) {
 		if(preso instanceof Capitan) {
 			System.out.println("¡He capturado al capitán enemigo!");
 			numPiratasCapturados++;
 			numMedallasHonor++;
+			return true;
 		}
 		else if(preso instanceof Subordinado) {
 			System.out.println("He pillado a un malandrín.");
 			numPiratasCapturados++;
+			return true;
+		}
+		else {
+			return true;
 		}
 	}
 	
+	/**
+	 * Método que sirve para que el almirante recorra los mares con su barco.
+	 * @param millasARecorrer Son las millas que va a avanzar el barco.
+	 * @return Devuelve las millas totales recorridas tras el viaje.
+	 * @see #millasRecorridas
+	 */
 	public int avanzarBarco (int millasARecorrer) {
 		System.out.println("¡Hora de impartir justicia! ¡Zarpamos con " + this.barcoQueDirige + "!");
 		this.millasRecorridas += millasARecorrer;

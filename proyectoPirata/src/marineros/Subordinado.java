@@ -1,5 +1,10 @@
 package marineros;
 
+/**
+ * Esta clase es la de los subordinados de los capitanes.
+ * @author Sergio
+ */
+
 public class Subordinado extends Pirata {
 	
 	private String apodo;
@@ -40,6 +45,11 @@ public class Subordinado extends Pirata {
 		this.numCanyonAsignado = numCanyonAsignado;
 	}
 	
+	/**
+	 * Método que sirve para que un subordinado friegue una cubierta. El éxito dependerá de su motivación.
+	 * @return Devuelve el éxito de la tarea de fregar la cubierta.
+	 */
+	
 	public boolean fregarCubierta (){
 		boolean fregada = false;
 		System.out.println("Esto no está limpio ni dos días seguidos...");
@@ -55,10 +65,18 @@ public class Subordinado extends Pirata {
 		return fregada;
 	}
 
+	/**
+	 * Método que sirve para que el subordinado grite su rugido de guerra.
+	 */
+	
 	@Override
 	void rugidoPirata() {
 		System.out.println("¡Por el oro, no por la gloria!");
 	}
+	
+	/**
+	 * Método que sirve para que el subordinado dispare el cañón que tiene asignado.
+	 */
 	
 	public void dispararCanyon() {
 		System.out.println("¡Voy al cañón " + this.numCanyonAsignado + "! ¡A disparar!");

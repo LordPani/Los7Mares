@@ -1,5 +1,10 @@
 package marineros;
 
+/**
+ * Esta clase es la superclase que engloba a los capitanes piratas con sus subordinados.
+ * @author Sergio
+ */
+
 public abstract class Pirata {
 	
 	protected String nombre;
@@ -57,6 +62,9 @@ public abstract class Pirata {
 		this.mascota = mascota;
 	}
 	
+	/**
+	 * Este método abstracto es diferente según el tipo de pirata.
+	 */
 	abstract void rugidoPirata();
 	
 	
