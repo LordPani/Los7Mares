@@ -3,7 +3,7 @@ package marineros;
 /**
  * Esta clase es la de los subordinados de los capitanes.
  * @author Sergio
- * @version 1.0
+ * @version 1.1
  */
 
 public class Subordinado extends Pirata {
@@ -80,10 +80,29 @@ public class Subordinado extends Pirata {
 	/**
 	 * Método que sirve para que el subordinado dispare el cañón que tiene asignado.
 	 * @since 1.0
+	 * @deprecated Desde la versión 1.1, reemplazado por {@link #dispararCanyonPorCircunstancia(int)}
 	 */
 	
 	public void dispararCanyon() {
 		System.out.println("¡Voy al cañón " + this.numCanyonAsignado + "! ¡A disparar!");
+	}
+	
+	/**
+	 * Método que sirve para que el subordinado dispare el cañón que tiene asignado. El pirata dirá una cosa u otra dependiendo de la fuerza del viento.
+	 * @since 1.1
+	 * @param potenciaViento La fuerza con la que sopla el viento, que asusta al pirata porque influirá en la precisión del disparo.
+	 */
+	
+	public void dispararCanyonPorCircunstancia (int potenciaViento) {
+		if (potenciaViento < 10) {
+			System.out.println("¡Voy al cañón " + this.numCanyonAsignado + "! ¡Seguro que no fallo!");
+		}
+		else if (potenciaViento > 10 && potenciaViento < 30) {
+			System.out.println("¡Voy a disparar el cañón " + this.numCanyonAsignado + ", pero hace viento y quizá se me vaya!");
+		}
+		else {
+			System.out.println("¡Abro fuego con el cañón " + this.numCanyonAsignado + ", pero seguro que fallo, que hay un vendaval!");
+		}
 	}
 		
 	

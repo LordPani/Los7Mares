@@ -45,7 +45,7 @@ public class Almirante extends Justiciero {
 	 * @param preso Es el pirata que ha capturado.
 	 * @return Devuelve el éxito de la captura, que en este caso siempre es true.
 	 * @since 1.0
-	 * @see marineros.Pirata
+	 * @see Pirata
 	 */
 	
 	public boolean capturarPirata (Pirata preso) {
