@@ -3,6 +3,7 @@ package marineros;
 /**
  * Esta clase es la de los subordinados de los capitanes.
  * @author Sergio
+ * @version 1.0
  */
 
 public class Subordinado extends Pirata {
@@ -48,6 +49,7 @@ public class Subordinado extends Pirata {
 	/**
 	 * Método que sirve para que un subordinado friegue una cubierta. El éxito dependerá de su motivación.
 	 * @return Devuelve el éxito de la tarea de fregar la cubierta.
+	 * @since 1.0
 	 */
 	
 	public boolean fregarCubierta (){
@@ -67,6 +69,7 @@ public class Subordinado extends Pirata {
 
 	/**
 	 * Método que sirve para que el subordinado grite su rugido de guerra.
+	 * @since 1.0
 	 */
 	
 	@Override
@@ -76,6 +79,7 @@ public class Subordinado extends Pirata {
 	
 	/**
 	 * Método que sirve para que el subordinado dispare el cañón que tiene asignado.
+	 * @since 1.0
 	 */
 	
 	public void dispararCanyon() {

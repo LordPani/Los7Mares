@@ -3,6 +3,7 @@ package marineros;
 /**
  * Esta clase es la superclase que engloba a los capitanes piratas con sus subordinados.
  * @author Sergio
+ * @version 1.0
  */
 
 public abstract class Pirata {
@@ -64,6 +65,7 @@ public abstract class Pirata {
 	
 	/**
 	 * Este método abstracto es diferente según el tipo de pirata.
+	 * @since 1.0
 	 */
 	abstract void rugidoPirata();
 	

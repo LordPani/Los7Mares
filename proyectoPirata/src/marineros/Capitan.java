@@ -3,6 +3,7 @@ package marineros;
 /**
  * Esta clase es la de los capitanes pirata.
  * @author Sergio
+ * @version 1.0
  */
 
 public class Capitan extends Pirata {
@@ -48,6 +49,7 @@ public class Capitan extends Pirata {
 	 * @param mandao El parámetro es un objeto de la clase Subordinado.
 	 * @return Devuelve true o false dependiendo de si el "mandao" ha cumplido la tarea.
 	 * @see #Subordinado.fregarCubierta()
+	 * @since 1.0
 	 */
 	
 	public boolean mandarAFregar(Subordinado mandao) {
@@ -58,6 +60,7 @@ public class Capitan extends Pirata {
 	/**
 	 * Método que sirve para que un capitán descubra una isla nueva.
 	 * @param isla El nombre de la isla que ha encontrado.
+	 * @since 1.0
 	 */
 	
 	public void descubrirIsla (String isla) {
@@ -68,6 +71,7 @@ public class Capitan extends Pirata {
 	 * Método que sirve para que un capitán asalte un pueblo y se lleve sus doblones.
 	 * @param pueblo El nombre del pueblo asaltado.
 	 * @param doblones El número de doblones que tiene el pueblo.
+	 * @since 1.0
 	 */
 	
 	public void asaltarPueblo (String pueblo, int doblones) {
@@ -78,6 +82,7 @@ public class Capitan extends Pirata {
 
 	/**
 	 * Método que sirve para que el capitán grite su rugido de guerra.
+	 * @since 1.0
 	 */
 	@Override
 	void rugidoPirata() {

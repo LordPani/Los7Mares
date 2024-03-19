@@ -3,6 +3,7 @@ package agentes;
 /**
  * Esta clase es la de los soldados rasos de la Marina, los reclutas.
  * @author Sergio
+ * @version 1.0
  */
 
 public class Recluta extends Justiciero {
@@ -36,6 +37,7 @@ public class Recluta extends Justiciero {
 	/**
 	 * Método que sirve para que el recluta eche el ancla. Si supera 51 anclas echadas, se gana una medalla de honor.
 	 * @return Devuelve el total de anclas echadas.
+	 * @since 1.0
 	 */
 	
 	public int echarAncla() {
@@ -49,6 +51,7 @@ public class Recluta extends Justiciero {
 	
 	/**
 	 * Método que sirve para que el recluta se ponga su gorro. Dependiendo del color, aumentará su puntería más o menos.
+	 * @since 1.0
 	 */
 	
 	public void ponerseGorro() {

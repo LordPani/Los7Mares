@@ -7,6 +7,7 @@ import marineros.Subordinado;
 /**
  * Esta clase es la de los jefes de la Marina, los almirantes.
  * @author Sergio
+ * @version 1.0
  */
 
 public class Almirante extends Justiciero {
@@ -43,6 +44,8 @@ public class Almirante extends Justiciero {
 	 * Método que sirve para que el almirante capture un pirata. Dependiendo de qué tipo capture, recibirá o no una medalla de honor.
 	 * @param preso Es el pirata que ha capturado.
 	 * @return Devuelve el éxito de la captura, que en este caso siempre es true.
+	 * @since 1.0
+	 * @see marineros.Pirata
 	 */
 	
 	public boolean capturarPirata (Pirata preso) {
@@ -67,6 +70,7 @@ public class Almirante extends Justiciero {
 	 * @param millasARecorrer Son las millas que va a avanzar el barco.
 	 * @return Devuelve las millas totales recorridas tras el viaje.
 	 * @see #millasRecorridas
+	 * @since 1.0
 	 */
 	public int avanzarBarco (int millasARecorrer) {
 		System.out.println("¡Hora de impartir justicia! ¡Zarpamos con " + this.barcoQueDirige + "!");

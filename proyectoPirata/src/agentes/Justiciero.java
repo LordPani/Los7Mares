@@ -3,6 +3,7 @@ package agentes;
 /**
  * Esta clase es la superclase de los agentes miembros de la Marina.
  * @author Sergio
+ * @version 1.0
  */
 
 public abstract class Justiciero {
