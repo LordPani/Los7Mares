@@ -3,7 +3,7 @@ package marineros;
 /**
  * Esta clase es la de los subordinados de los capitanes.
  * @author Sergio
- * @version 1.1
+ * @version 1.2
  */
 
 public class Subordinado extends Pirata {
@@ -47,8 +47,9 @@ public class Subordinado extends Pirata {
 	}
 	
 	/**
-	 * Método que sirve para que un subordinado friegue una cubierta. El éxito dependerá de su motivación.
+	 * Metodo que sirve para que un subordinado friegue una cubierta. El exito depende de su motivacion.
 	 * @return Devuelve el éxito de la tarea de fregar la cubierta.
+	 * @see #motivacion
 	 * @since 1.0
 	 */
 	
@@ -78,9 +79,9 @@ public class Subordinado extends Pirata {
 	}
 	
 	/**
-	 * Método que sirve para que el subordinado dispare el cañón que tiene asignado.
+	 * Metodo que sirve para que el subordinado dispare el cañon que tiene asignado.
 	 * @since 1.0
-	 * @deprecated Desde la versión 1.1, reemplazado por {@link #dispararCanyonPorCircunstancia(int)}
+	 * @deprecated Desde la version 1.1, reemplazado por {@link #dispararCanyonPorCircunstancia(int)}
 	 */
 	
 	public void dispararCanyon() {
@@ -88,9 +89,10 @@ public class Subordinado extends Pirata {
 	}
 	
 	/**
-	 * Método que sirve para que el subordinado dispare el cañón que tiene asignado. El pirata dirá una cosa u otra dependiendo de la fuerza del viento.
+	 * Metodo que sirve para que el subordinado dispare el cañon que tiene asignado. El pirata dice una cosa u otra dependiendo de la fuerza del viento.
 	 * @since 1.1
-	 * @param potenciaViento La fuerza con la que sopla el viento, que asusta al pirata porque influirá en la precisión del disparo.
+	 * @param potenciaViento La fuerza con la que sopla el viento, que asusta al pirata porque influye en la precision del disparo.
+	 * @see #numCanyonAsignado
 	 */
 	
 	public void dispararCanyonPorCircunstancia (int potenciaViento) {

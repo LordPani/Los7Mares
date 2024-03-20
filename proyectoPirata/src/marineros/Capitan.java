@@ -3,7 +3,7 @@ package marineros;
 /**
  * Esta clase es la de los capitanes pirata.
  * @author Sergio
- * @version 1.0
+ * @version 1.2
  */
 
 public class Capitan extends Pirata {
@@ -45,8 +45,8 @@ public class Capitan extends Pirata {
 	}
 	
 	/**
-	 * Método que sirve para que un capitán pirata mande fregar a un subordinado.
-	 * @param mandao El parámetro es un objeto de la clase Subordinado.
+	 * Metodo que sirve para que un capitan pirata mande fregar a un subordinado.
+	 * @param mandao El parametro es un objeto de la clase Subordinado.
 	 * @return Devuelve true o false dependiendo de si el "mandao" ha cumplido la tarea.
 	 * @see #Subordinado.fregarCubierta()
 	 * @since 1.0
@@ -58,7 +58,7 @@ public class Capitan extends Pirata {
 	}
 	
 	/**
-	 * Método que sirve para que un capitán descubra una isla nueva.
+	 * Metodo que sirve para que un capitan descubra una isla nueva.
 	 * @param isla El nombre de la isla que ha encontrado.
 	 * @since 1.0
 	 */
@@ -68,9 +68,9 @@ public class Capitan extends Pirata {
 	}
 	
 	/**
-	 * Método que sirve para que un capitán asalte un pueblo y se lleve sus doblones.
+	 * Metodo que sirve para que un capitan asalte un pueblo y se lleve sus doblones.
 	 * @param pueblo El nombre del pueblo asaltado.
-	 * @param doblones El número de doblones que tiene el pueblo.
+	 * @param doblones El numero de doblones que tiene el pueblo.
 	 * @since 1.0
 	 */
 	
@@ -81,7 +81,7 @@ public class Capitan extends Pirata {
 	}
 
 	/**
-	 * Método que sirve para que el capitán grite su rugido de guerra.
+	 * Metodo que sirve para que el capitan grite su rugido de guerra.
 	 * @since 1.0
 	 */
 	@Override
