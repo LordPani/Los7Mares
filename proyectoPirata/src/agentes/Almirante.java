@@ -51,7 +51,7 @@ public class Almirante extends Justiciero {
 	
 	public boolean capturarPirata (Pirata preso) {
 		if(preso instanceof Capitan) {
-			System.out.println("¡He capturado al capitán enemigo!");
+			System.out.println("¡He capturado al capitán enemigo! Seguro que era negro o gitano");
 			numPiratasCapturados++;
 			numMedallasHonor++;
 			return true;
